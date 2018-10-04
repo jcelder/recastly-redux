@@ -27,6 +27,7 @@ describe('containers', function() {
       store.dispatch.reset();
     });
     it('should have a prop called handleSearchInputChange which dispatches handleVideoSearch', function() {
+      debugger;
       component.props().handleSearchInputChange('kitten mittens');
       expect(component.props().handleSearchInputChange).to.be.a('function');
       expect(store.dispatch.callCount).to.equal(1);
